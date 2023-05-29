@@ -37,7 +37,7 @@ k = -dR0_dG/taus
 # START SOME PLOTTING
 plt.figure(1, figsize=(12,9))
 
-plt.plot(taus[:-2], k[:-2], color='black')
+plt.plot(taus[:-2], -k[:-2], color='black')
 #plt.xscale('log')
 plt.title('K values for various depths of the resonance peak', fontsize=16)
 plt.xlabel('R\u2080', fontsize=18)
