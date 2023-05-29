@@ -59,7 +59,7 @@ plt.figure(2, figsize=(12,9))
 
 plt.plot(taus[:-2], dR0_dG[:-2], color='black')
 #plt.xscale('log')
-plt.title('dR\u2080/dG for various R\u2080s', fontsize=16)
+plt.title('dR\u2080/dG for various reflection coefficients', fontsize=16)
 plt.xlabel('R\u2080', fontsize=18)
 plt.ylabel('dR\u2080/dG', fontsize=16)
 plt.minorticks_on()
