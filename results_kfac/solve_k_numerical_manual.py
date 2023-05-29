@@ -39,7 +39,7 @@ plt.figure(1, figsize=(12,9))
 
 plt.plot(taus[:-2], -k[:-2], color='black')
 #plt.xscale('log')
-plt.title('K values for various depths of the resonance peak', fontsize=16)
+plt.title('K factor for various reflection coefficients', fontsize=16)
 plt.xlabel('R\u2080', fontsize=18)
 plt.ylabel('K factor', fontsize=16)
 plt.minorticks_on()
