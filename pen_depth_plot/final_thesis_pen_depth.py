@@ -6,7 +6,7 @@ cond = np.logspace(-5, 3, 100)
 depth = np.sqrt(2 / (freq * cond)) * 10**9
 
 plt.figure(figsize=(12, 9))
-plt.plot(cond, depth)
+plt.plot(cond, depth, color='black')
 plt.xscale('log')
 plt.yscale('log')
 plt.title('Penetration depth vs conductivity at 8.5GHz')
