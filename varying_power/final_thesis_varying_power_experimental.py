@@ -18,8 +18,9 @@ Send me a message.
 dataset = np.genfromtxt('final_thesis_100nm_deltaP.txt', skip_header=1, delimiter=',')
 deltaP = dataset[:,1::2]
 manual_k_fac = 64000
+F_A = 0.78
 num_photons = 1.03 * 10**10
-etamu = deltaP/(2.25*1.602*10**-19*num_photons*manual_k_fac)
+etamu = deltaP/(2.25*1.602*10**-19*num_photons*manual_k_fac*F_A)
 time = dataset[:, 0]
 
 
@@ -60,7 +61,7 @@ plt.grid(which='minor', color='gray', linewidth=0.5, alpha=0.3)
 plt.minorticks_on()
 plt.xticks(fontsize=14)
 plt.yticks(fontsize=14)
-plt.ylabel('dG/(\u03B2 I\u2080 e)', fontsize=18)
+plt.ylabel('\u0394G/(\u03B2 I\u2080 e $F_{A}$)', fontsize=18)
 plt.xlabel('Time [S]', fontsize=18)
 plt.legend(loc=4)
 plt.title('Normalized TRMC traces with varying power, '+str("{:.2e}".format(num_photons))+' photons/cm\u00b2', fontsize=16)
@@ -83,10 +84,10 @@ plt.grid(which='minor', color='gray', linewidth=0.5, alpha=0.3)
 plt.minorticks_on()
 plt.xticks(fontsize=14)
 plt.yticks(fontsize=14)
-plt.ylabel('dG/(\u03B2 I\u2080 e)', fontsize=18)
+plt.ylabel('\u0394G/(\u03B2 I\u2080 e $F_{A}$)', fontsize=18)
 plt.xlabel('Time [S]', fontsize=18)
 plt.xlim([3*10**-8, 5*10**-7])
-plt.ylim([8.5,12])
+plt.ylim([10,16])
 plt.legend(loc=0)
 plt.title('Normalized TRMC traces with varying power, '+str("{:.2e}".format(num_photons))+' photons/cm\u00b2', fontsize=16)
 
@@ -112,8 +113,9 @@ Intentionally left blank
 dataset = np.genfromtxt('final_thesis_200nm_deltaP.txt', skip_header=1, delimiter=',')
 deltaP = dataset[:,1::2]
 manual_k_fac = 64000
+F_A = 0.79
 num_photons = 1.06 * 10**10
-etamu = deltaP/(2.25*1.602*10**-19*num_photons*manual_k_fac)
+etamu = deltaP/(2.25*1.602*10**-19*num_photons*manual_k_fac*F_A)
 time = dataset[:, 0]
 
 
@@ -154,7 +156,7 @@ plt.grid(which='minor', color='gray', linewidth=0.5, alpha=0.3)
 plt.minorticks_on()
 plt.xticks(fontsize=14)
 plt.yticks(fontsize=14)
-plt.ylabel('dG/(\u03B2 I\u2080 e)', fontsize=18)
+plt.ylabel('\u0394G/(\u03B2 I\u2080 e $F_{A}$)', fontsize=18)
 plt.xlabel('Time [S]', fontsize=18)
 plt.legend(loc=4)
 plt.title('Normalized TRMC traces with varying power, '+str("{:.2e}".format(num_photons))+' photons/cm\u00b2', fontsize=16)
@@ -177,10 +179,10 @@ plt.grid(which='minor', color='gray', linewidth=0.5, alpha=0.3)
 plt.minorticks_on()
 plt.xticks(fontsize=14)
 plt.yticks(fontsize=14)
-plt.ylabel('dG/(\u03B2 I\u2080 e)', fontsize=18)
+plt.ylabel('\u0394G/(\u03B2 I\u2080 e $F_{A}$)', fontsize=18)
 plt.xlabel('Time [S]', fontsize=18)
 plt.xlim([3*10**-8, 5*10**-7])
-plt.ylim([17,26])
+plt.ylim([20,32])
 plt.legend(loc=0)
 plt.title('Normalized TRMC traces with varying power, '+str("{:.2e}".format(num_photons))+' photons/cm\u00b2', fontsize=16)
 
