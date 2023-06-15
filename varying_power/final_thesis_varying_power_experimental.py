@@ -64,7 +64,7 @@ plt.yticks(fontsize=14)
 plt.ylabel('\u0394G/(\u03B2 I\u2080 e $F_{A}$)', fontsize=18)
 plt.xlabel('Time [S]', fontsize=18)
 plt.legend(loc=4)
-plt.title('Normalized TRMC traces with varying power, '+str("{:.2e}".format(num_photons))+' photons/cm\u00b2', fontsize=16)
+#plt.title('Normalized TRMC traces with varying power, '+str("{:.2e}".format(num_photons))+' photons/cm\u00b2', fontsize=16)
 
 # save and show the plot
 plt.savefig('final_thesis_100nm_power_varying_trmc_zoomed_out.png')
@@ -89,7 +89,7 @@ plt.xlabel('Time [S]', fontsize=18)
 plt.xlim([3*10**-8, 5*10**-7])
 plt.ylim([10,16])
 plt.legend(loc=0)
-plt.title('Normalized TRMC traces with varying power, '+str("{:.2e}".format(num_photons))+' photons/cm\u00b2', fontsize=16)
+#plt.title('Normalized TRMC traces with varying power, '+str("{:.2e}".format(num_photons))+' photons/cm\u00b2', fontsize=16)
 
 # save and show the plot
 plt.savefig('final_thesis_100nm_power_varying_trmc_zoomed_in.png')
@@ -117,8 +117,6 @@ F_A = 0.79
 num_photons = 1.06 * 10**10
 etamu = deltaP/(2.25*1.602*10**-19*num_photons*manual_k_fac*F_A)
 time = dataset[:, 0]
-
-
 
 # create a colormap
 cmap = plt.cm.get_cmap('rainbow')
@@ -159,7 +157,7 @@ plt.yticks(fontsize=14)
 plt.ylabel('\u0394G/(\u03B2 I\u2080 e $F_{A}$)', fontsize=18)
 plt.xlabel('Time [S]', fontsize=18)
 plt.legend(loc=4)
-plt.title('Normalized TRMC traces with varying power, '+str("{:.2e}".format(num_photons))+' photons/cm\u00b2', fontsize=16)
+#plt.title('Normalized TRMC traces with varying power, '+str("{:.2e}".format(num_photons))+' photons/cm\u00b2', fontsize=16)
 
 # save and show the plot
 plt.savefig('final_thesis_200nm_power_varying_trmc_zoomed_out.png')
@@ -184,7 +182,7 @@ plt.xlabel('Time [S]', fontsize=18)
 plt.xlim([3*10**-8, 5*10**-7])
 plt.ylim([20,32])
 plt.legend(loc=0)
-plt.title('Normalized TRMC traces with varying power, '+str("{:.2e}".format(num_photons))+' photons/cm\u00b2', fontsize=16)
+#plt.title('Normalized TRMC traces with varying power, '+str("{:.2e}".format(num_photons))+' photons/cm\u00b2', fontsize=16)
 
 # save and show the plot
 plt.savefig('final_thesis_200nm_power_varying_trmc_zoomed_in.png')
@@ -227,7 +225,7 @@ plt.ylabel('Power reflection coefficient (R)', fontsize=18)
 plt.xlabel('Frequency [GHz]', fontsize=18)
 plt.xlim(np.min(frequencies), np.max(frequencies))
 plt.legend(loc=4)
-plt.title('Normalized SSMC measurements with varying power')
+#plt.title('Normalized SSMC measurements with varying power')
 plt.savefig('final_thesis_SSMC_varyingpower_zoomed_out.png')
 plt.show()
 
@@ -246,7 +244,7 @@ plt.xlabel('Frequency [GHz]', fontsize=18)
 plt.xlim(9.18, 9.5)
 plt.ylim(0.88, 1.13)
 plt.legend(loc=1)
-plt.title('Normalized SSMC measurements with varying power')
+#plt.title('Normalized SSMC measurements with varying power')
 plt.savefig('final_thesis_SSMC_varyingpower_zoomed_in_dif.png')
 plt.show()
 
@@ -265,7 +263,7 @@ plt.xlabel('Frequency [GHz]', fontsize=18)
 plt.xlim(8.475, 8.55)
 plt.ylim(0.6, 1.13)
 plt.legend(loc=4)
-plt.title('Normalized SSMC measurements with varying power')
+#plt.title('Normalized SSMC measurements with varying power')
 plt.savefig('final_thesis_SSMC_varyingpower_zoomed_in_res_8_5.png')
 plt.show()
 
