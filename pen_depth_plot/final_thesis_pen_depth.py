@@ -9,7 +9,7 @@ plt.figure(figsize=(12, 9))
 plt.plot(cond, depth, color='black')
 plt.xscale('log')
 plt.yscale('log')
-plt.title('Penetration depth vs conductivity at 8.5GHz')
+#plt.title('Penetration depth vs conductivity at 8.5GHz')
 plt.ylabel('penetration depth [nm]', fontsize=18)
 plt.xlabel('conductivity [S/m]', fontsize=18)
 
