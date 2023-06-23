@@ -31,7 +31,7 @@ for ic, damping in zip(initial_conditions, damping_values):
 
 # Plot the solutions
 plt.figure(figsize=(12, 9))
-plt.title("Response of a unit pulse of an RLC circuit dependent on damping", fontsize=16)
+#plt.title("Response of a unit pulse of an RLC circuit dependent on damping", fontsize=16)
 plt.xlabel("Time", fontsize=18)
 plt.ylabel("Voltage", fontsize=18)
 plt.grid(which='major', color='black', linewidth=0.5, alpha=0.6)
