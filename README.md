@@ -5,4 +5,4 @@ This code is definitly unpolished, but functional. I however believe that in 202
 
 Run in Python 3.10, NumPy 1.24.0, SciPy 1.9.3 and Matplotlib 3.6.2.
 
-More code has been generated during thesis but has not been used in the final thesis and has hence not been reported.
+More code has been generated during thesis but has not been used in the final thesis, hence not been reported.
